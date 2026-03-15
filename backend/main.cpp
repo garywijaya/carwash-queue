@@ -189,6 +189,8 @@ crow::response ok(crow::json::wvalue data) {
     auto r = crow::response(200, res.dump());
     r.add_header("Content-Type",                "application/json");
     r.add_header("Access-Control-Allow-Origin", "*");
+    r.add_header("Access-Control-Allow-Methods","GET,POST,OPTIONS");
+    r.add_header("Access-Control-Allow-Headers","Content-Type");
     return r;
 }
 
