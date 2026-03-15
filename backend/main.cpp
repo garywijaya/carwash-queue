@@ -18,7 +18,7 @@
  */
 
 #define CROW_MAIN
-#include "crow/crow_all.h"
+#include "crow_all.h"
 #include <string>
 #include <mutex>
 #include <sstream>
